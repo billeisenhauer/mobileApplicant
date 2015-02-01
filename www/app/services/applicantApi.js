@@ -24,28 +24,7 @@
     }
 
     function getJobDetail(jobId) {
-      var job = getJobForId(jobId);
-      return {
-        id : jobId,
-        title : job.title,
-        description : 'This is the job description.'
-      }
-    }
-
-    function getJobForId(id) {
-      var foundJob;
-      jobs.forEach(function(job) {
-        if (job.id == id) {
-          foundJob = job;
-        }
-      });
-      if (foundJob) {
-        return foundJob
-      } else {
-        return {
-          title : 'Job not found.'
-        }
-      }
+      return _.findWhere(jobs, { id: jobId });
     }
 
     function getFaves() {
