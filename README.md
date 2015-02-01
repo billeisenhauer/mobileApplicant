@@ -11,11 +11,15 @@ NOTE: you may need to run the following commands as ```sudo``` if they fail with
 * Install the latest version of [NodeJS](http://nodejs.org/) in order to have access to its package manager.
 * Use npm to install necessary packages using the command below:
 ```bash
-npm install -g cordova ionic karma gulp bower
+npm install -g cordova ionic karma karma-cli gulp bower
 ```
 * Use bower to install the angular-data plugin using the command below:
 ```bash
 bower install angular-cache --save-dev
+```
+* Set up for testing with Karma using the command below:
+```bash
+npm install --save-dev karma karma-mocha karma-chai karma-phantomjs-launcher
 ```
 
 ## Running the App
