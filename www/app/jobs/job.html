@@ -1,0 +1,17 @@
+<ion-view view-title="Job Detail" ng-controller="JobDetailCtrl as vm">
+  <ion-content>
+    <h1>{{vm.jobDetail.title}}</h1>
+    <p>{{vm.jobDetail.description}}</p>
+  </ion-content>
+  <ion-tabs class="tabs-positive tabs-icon-top">
+    <a class="tab-item">
+      <i class="icon ion-heart"></i>
+      Fave
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-edit"></i>
+      Apply
+    </a>
+  </ion-tabs>
+</ion-view>
+

@@ -1,0 +1,9 @@
+<ion-view view-title="Jobs" ng-controller="JobsCtrl as vm">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="job in vm.jobs" href="#/app/jobs/{{job.id}}">
+        {{job.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

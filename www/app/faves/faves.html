@@ -1,0 +1,9 @@
+<ion-view view-title="Favorites" ng-controller="FavesCtrl as vm">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="job in vm.jobs" href="#/app/jobs/{{job.id}}">
+        {{job.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
